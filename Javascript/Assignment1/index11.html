@@ -1,0 +1,30 @@
+<!-- page 2 question 5 -->
+
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    function checker(inputarray){
+        var nonqarr = inputarray.filter(function (word)
+        {
+        return !word.includes("q")
+        }
+        );
+        var stringform=nonqarr.toString();
+        if (nonqarr.length>0){
+        return stringform.length-nonqarr.length+1;
+        }
+        else{
+        return stringform.length-nonqarr.length;
+        }
+        return length
+        }
+    </script>
+</body>
+</html>

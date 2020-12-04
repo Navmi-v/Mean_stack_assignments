@@ -1,0 +1,50 @@
+<!--page 4 question 6-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form>
+    <label for="num">Enter a number</label>
+    <input type="number" id="num" name="num">
+    <br><br>
+    <input type="button" name="multiply" value="multiply" onclick="mul()">
+    <input type="button" name="addition" value="addition" onclick="add()">
+    <p id="result"></p>
+  </form>
+    <script>
+      function add(){
+        var n = Number(document.getElementById("num").value);
+        console.log(n);
+        var a = 0;
+        for(i=1; i<=n; i++){
+          a = a+i;
+        }
+        document.getElementById("result").innerHTML= a;
+      };
+
+      function mul(){
+        var n = Number(document.getElementById("num").value);
+        console.log(n);
+        var answer = 1;
+        if (n == 0 || n == 1){
+          document.getElementById("result").innerHTML= answer;
+        }else{
+        for(var i = n; i >= 1; i--){
+        answer = answer * i;
+        }
+          
+          document.getElementById("result").innerHTML= answer;
+        }  
+
+
+      }
+
+
+
+    </script>
+</body>
+</html>

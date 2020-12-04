@@ -1,0 +1,28 @@
+<!--Page 5 question24-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="myFunction()">
+    <label for="num">Enter a number which you want to convert as a list</label>
+    <input type="number" id="num" name="num"><br>
+
+    <input type="button" name="Result" value="Result" onclick="myFunction()">
+    
+    </form>
+
+    <p id="ans"></p>
+</body>
+
+<script>
+    function myFunction(){
+        var a = Number(document.getElementById("num").value);
+        let array = a.toString().split("");
+        document.getElementById("ans").innerHTML = array;
+    }
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Objects</h2>
+
+    <p id="demo"></p>
+    <script>
+        class rectangle{
+            constructor (width, height){
+                this.height = height;
+                this.width = width;
+            }
+            getArea(){
+                var area;
+                return area = this.width*this.height;
+            }
+
+        }
+       
+        myRectangle = new rectangle(4,5);
+        document.getElementById("demo").innerHTML = "The area is "+ myRectangle.getArea();
+        myRectangle.height = 50;
+
+        
+    </script>
+</body>
+</html>

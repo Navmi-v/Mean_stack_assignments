@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+
+    <script>
+    function myFunction() {
+        for(i=0; i<3; i++){
+      var x = window.prompt("Please enter an integer between 1 to 30");
+      if (isNaN(x) || x < 1 || x > 30) {
+    text = "Input not valid";
+    document.getElementById("demo").innerHTML = text;
+  } else 
+  for(i=0; i<x; i++){
+    padChars(x,"*");
+    
+  }
+  
+      function padChars(x,s){
+    newStr=s.repeat(x)
+    alert(newStr)
+}
+    }
+
+    }
+    </script>
+    
+</body>
+</html>

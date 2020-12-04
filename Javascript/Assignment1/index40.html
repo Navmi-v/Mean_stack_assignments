@@ -1,0 +1,65 @@
+<!--Page 4 question19 and 21-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <h4>Enter numbers for first array</h4>
+    <form onclick="myFun()">
+       <label for="num1">Enter first number</label> 
+       <input type="number" id="num1" name="num1"><br><br>
+       
+       <label for="num2">Enter second number</label> 
+       <input type="number" id="num2" name="num2"><br><br>
+
+       <label for="num3">Enter third number</label> 
+       <input type="number" id="num3" name="num3"><br><br>
+
+       <h4>Enter numbers for second array</h4>
+
+       <label for="num01">Enter first number</label> 
+       <input type="number" id="num01" name="num01"><br><br>
+       
+       <label for="num02">Enter second number</label> 
+       <input type="number" id="num02" name="num02"><br><br>
+
+       <label for="num03">Enter third number</label> 
+       <input type="number" id="num03" name="num03"><br><br>
+
+       <label for="num04">Enter fourth number</label> 
+       <input type="number" id="num04" name="num04">
+
+
+       <input type="button" name="Concatenate!" value="Concatenate!" onclick="myFun()">
+       <input type="button" name="Sort!" value="Sort!" onclick="myFun()">
+       </form>
+    <p id="result"></p>
+    <p id="res"></p>
+    <p id="ANS"></p>
+    <h5>Sorted answer</h5>
+    <p id="sorted"></p>
+    <script>
+        function myFun(){
+            var array = new Array();
+            array[0] = Number(document.getElementById("num1").value);
+            array[1] = Number(document.getElementById("num2").value);
+            array[2] = Number(document.getElementById("num3").value);    
+            document.getElementById("result").innerHTML = array;
+
+            var arrays = new Array();
+            arrays[0] = Number(document.getElementById("num01").value);
+            arrays[1] = Number(document.getElementById("num02").value);
+            arrays[2] = Number(document.getElementById("num03").value);   
+            arrays[3] = Number(document.getElementById("num04").value); 
+            document.getElementById("res").innerHTML = arrays;
+
+           var merge = array.concat(arrays);
+           document.getElementById("ANS").innerHTML = merge;
+            
+           document.getElementById("sorted").innerHTML = merge.sort();
+        }
+    </script>
+</body>
+</html>

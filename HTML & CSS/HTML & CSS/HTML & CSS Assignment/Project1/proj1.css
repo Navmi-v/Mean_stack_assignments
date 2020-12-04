@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3{
+    text-align: center;
+}
+
+.punchline{
+    text-transform: capitalize;
+    text-shadow: darkgrey;
+}
+
+body{
+    background-color: rgb(236, 229, 229);
+    font-family: optima;
+    font-size: medium;
+}
+
+.image{
+    align-content: center;
+}
+
+.imp{
+    border: 1px solid gray;
+    border-radius: 3%;
+    }
+
+footer{
+    text-align: center;
+}
+
+section.sav{
+    text-align: center;
+}

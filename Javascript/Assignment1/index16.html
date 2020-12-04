@@ -1,0 +1,28 @@
+<!--Page 4 Question8-->
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        function primeFactors(max){
+            var store  = [], i, j, prime = [];
+            for (i = 2; i <= max; ++i) 
+            {
+                if (!store [i]) 
+                {
+                    prime.push(i);
+                    for (j = i << 1; j <= max; j += i) 
+                    {
+                        store[j] = true;
+                    }
+                }
+            }
+            return prime;
+        }
+        console.log(primeFactors(5));
+        console.log(primeFactors(15));
+    </script>
+
+</body>
+</html>

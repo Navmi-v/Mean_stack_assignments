@@ -1,0 +1,13 @@
+div{
+
+    border: 1px solid red;
+}
+
+section{
+    border: dashed green;
+
+}
+
+body{
+    border: 0.8px solid blue;
+}
